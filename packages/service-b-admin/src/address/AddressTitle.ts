@@ -1,7 +1,7 @@
 import { Address as TAddress } from "../api/address/Address";
 
-export const ADDRESS_TITLE_FIELD = "address_1";
+export const ADDRESS_TITLE_FIELD = "state";
 
 export const AddressTitle = (record: TAddress): string => {
-  return record.address_1 || String(record.id);
+  return record.state || String(record.id);
 };
