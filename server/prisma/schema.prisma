@@ -45,15 +45,16 @@ model Customer {
 }
 
 model Address {
-  city      String?
-  state     String?
-  address_2 String?
   id        String     @id @default(cuid())
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
   address_1 String?
+  address_2 String?
+  city      String?
+  state     String?
   zip       Int?
   customers Customer[]
+  country   String?
 }
 
 model Product {

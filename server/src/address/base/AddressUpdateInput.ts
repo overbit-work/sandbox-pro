@@ -26,18 +26,7 @@ class AddressUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  city?: string | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  state?: string | null;
+  address_1?: string | null;
 
   @ApiProperty({
     required: false,
@@ -59,7 +48,18 @@ class AddressUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  address_1?: string | null;
+  city?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  state?: string | null;
 
   @ApiProperty({
     required: false,
@@ -83,6 +83,17 @@ class AddressUpdateInput {
     nullable: true,
   })
   customers?: CustomerUpdateManyWithoutAddressesInput;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  country?: string | null;
 }
 
 export { AddressUpdateInput as AddressUpdateInput };

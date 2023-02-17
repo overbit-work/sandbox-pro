@@ -19,46 +19,50 @@ import { AddressService } from "../address.service";
 const nonExistingId = "nonExistingId";
 const existingId = "existingId";
 const CREATE_INPUT = {
-  city: "exampleCity",
-  state: "exampleState",
-  address_2: "exampleAddress_2",
   id: "exampleId",
   createdAt: new Date(),
   updatedAt: new Date(),
   address_1: "exampleAddress_1",
+  address_2: "exampleAddress_2",
+  city: "exampleCity",
+  state: "exampleState",
   zip: 42,
+  country: "exampleCountry",
 };
 const CREATE_RESULT = {
-  city: "exampleCity",
-  state: "exampleState",
-  address_2: "exampleAddress_2",
   id: "exampleId",
   createdAt: new Date(),
   updatedAt: new Date(),
   address_1: "exampleAddress_1",
+  address_2: "exampleAddress_2",
+  city: "exampleCity",
+  state: "exampleState",
   zip: 42,
+  country: "exampleCountry",
 };
 const FIND_MANY_RESULT = [
   {
-    city: "exampleCity",
-    state: "exampleState",
-    address_2: "exampleAddress_2",
     id: "exampleId",
     createdAt: new Date(),
     updatedAt: new Date(),
     address_1: "exampleAddress_1",
+    address_2: "exampleAddress_2",
+    city: "exampleCity",
+    state: "exampleState",
     zip: 42,
+    country: "exampleCountry",
   },
 ];
 const FIND_ONE_RESULT = {
-  city: "exampleCity",
-  state: "exampleState",
-  address_2: "exampleAddress_2",
   id: "exampleId",
   createdAt: new Date(),
   updatedAt: new Date(),
   address_1: "exampleAddress_1",
+  address_2: "exampleAddress_2",
+  city: "exampleCity",
+  state: "exampleState",
   zip: 42,
+  country: "exampleCountry",
 };
 
 const service = {

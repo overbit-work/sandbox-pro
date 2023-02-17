@@ -53,14 +53,15 @@ export class AddressControllerBase {
     return await this.service.create({
       data: data,
       select: {
-        city: true,
-        state: true,
-        address_2: true,
         id: true,
         createdAt: true,
         updatedAt: true,
         address_1: true,
+        address_2: true,
+        city: true,
+        state: true,
         zip: true,
+        country: true,
       },
     });
   }
@@ -82,14 +83,15 @@ export class AddressControllerBase {
     return this.service.findMany({
       ...args,
       select: {
-        city: true,
-        state: true,
-        address_2: true,
         id: true,
         createdAt: true,
         updatedAt: true,
         address_1: true,
+        address_2: true,
+        city: true,
+        state: true,
         zip: true,
+        country: true,
       },
     });
   }
@@ -112,14 +114,15 @@ export class AddressControllerBase {
     const result = await this.service.findOne({
       where: params,
       select: {
-        city: true,
-        state: true,
-        address_2: true,
         id: true,
         createdAt: true,
         updatedAt: true,
         address_1: true,
+        address_2: true,
+        city: true,
+        state: true,
         zip: true,
+        country: true,
       },
     });
     if (result === null) {
@@ -151,14 +154,15 @@ export class AddressControllerBase {
         where: params,
         data: data,
         select: {
-          city: true,
-          state: true,
-          address_2: true,
           id: true,
           createdAt: true,
           updatedAt: true,
           address_1: true,
+          address_2: true,
+          city: true,
+          state: true,
           zip: true,
+          country: true,
         },
       });
     } catch (error) {
@@ -189,14 +193,15 @@ export class AddressControllerBase {
       return await this.service.delete({
         where: params,
         select: {
-          city: true,
-          state: true,
-          address_2: true,
           id: true,
           createdAt: true,
           updatedAt: true,
           address_1: true,
+          address_2: true,
+          city: true,
+          state: true,
           zip: true,
+          country: true,
         },
       });
     } catch (error) {

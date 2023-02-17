@@ -12,14 +12,15 @@ export const AddressList = (props: ListProps): React.ReactElement => {
       pagination={<Pagination />}
     >
       <Datagrid rowClick="show">
-        <TextField label="City" source="city" />
-        <TextField label="State" source="state" />
-        <TextField label="Address 2" source="address_2" />
         <TextField label="ID" source="id" />
         <DateField source="createdAt" label="Created At" />
         <DateField source="updatedAt" label="Updated At" />
         <TextField label="Address 1" source="address_1" />
+        <TextField label="Address 2" source="address_2" />
+        <TextField label="City" source="city" />
+        <TextField label="State" source="state" />
         <TextField label="Zip" source="zip" />
+        <TextField label="Country" source="country" />
       </Datagrid>
     </List>
   );
